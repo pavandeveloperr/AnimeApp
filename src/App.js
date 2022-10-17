@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react"
- function App() {
+import './Components/style.css' 
+
+function App() {
    
   //creating a state variable to hold response 
   //(setAnimeData is used for updating the state & animeData is initial state )
@@ -10,6 +12,8 @@ import React, { useEffect, useState } from "react"
   setAnimeData(resData.data)
  }
 
+ //this method will run when the component will render 
+ //it takes two arguments first is function & second is dependency
  useEffect(() => {
   getData()
  }, [])
