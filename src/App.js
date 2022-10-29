@@ -65,7 +65,7 @@ function App() {
           </div>
         </div>
       </div>
-      <footer class="bg-white-200 text-center text-black-400 lg:text-left">
+      <footer class="bg-white-200 text-center text-black-400 lg:text-center">
         <div className='my-4'>
         <h3 className='footer-content'>Made with <i className="fas fa-heart" aria-hidden="true"></i> <a class="link" href="https://github.com/pavandeveloperr">
              Pavan Kulkarni </a></h3> 
