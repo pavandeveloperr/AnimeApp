@@ -29,7 +29,7 @@ function App() {
           <div className="max-w-8xl px-4 py-1 sm:px-6 lg:px-8 w-full mx-auto">
             <div className="relative flex items-center justify-between h-16">
               <h3 className="md:block font-body text-3xl logo-text">
-                My<strong>Anime</strong>List
+                My<strong>Anime</strong>
               </h3>
               <form className="sm: pl-2.5">
                 <div className="relative rounded-sm shadow-sm bg-gray-200">
