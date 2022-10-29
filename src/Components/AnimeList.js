@@ -24,10 +24,8 @@ export const AnimeList = ({animelist, setAnimeInfo}) => {
                   className="anime-img rounded-t-lg"
                   alt="animeImage"
                 />
-                <p className='text-[8px] sm:text-[11px]'>{anime.title}</p>
-              </div>
-  
-                  
+                <p className='text-[8px] sm:text-[20px] text-bold'>{anime.title}</p>
+              </div>                 
                 
             </>
           );
