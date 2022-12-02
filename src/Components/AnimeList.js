@@ -15,16 +15,16 @@ export const AnimeList = ({animelist, setAnimeInfo}) => {
           return (
             <>
               <div
-                className="card shadow-lg rounded-lg"
-                key={index}
-                onClick={() => setAnimeInfo(anime)}
+                className="card shadow-lg flex flex-col w-[270px] gap-4 mt-4 m-auto p-auto
+                p-3 bg-[#707ea9] bg-opacity-20
+                backdrop-blur-lg animate-slideup rounded-lg cursor-pointer font-semibold" 
               >
                 <img
                   src={anime.images.jpg.large_image_url}
-                  className="anime-img rounded-t-lg"
+                  className="anime-img w-[290px] h-[320px] rounded-lg"
                   alt="animeImage"
                 />
-                <p className='text-[8px] sm:text-[20px] text-bold'>{anime.title}</p>
+                <p className='lg:text-[15px] md:text-[15px] sm:text-[15px] truncate text-green-500'>{anime.title}</p>
               </div>                 
                 
             </>
