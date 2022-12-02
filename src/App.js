@@ -28,7 +28,7 @@ function App() {
           <div className="max-w-8xl px-4 py-1 sm:px-6 lg:px-8 w-full mx-auto">
             <div className="relative flex items-center justify-between h-16">
               <h3 className="md:block font-body text-3xl logo-text text-yellow-50">
-                My<strong className='text-red-400'>Anime</strong>List
+                My<strong className="text-red-400">Anime</strong>List
               </h3>
               <form className="sm:pl-2">
                 <div className="relative rounded-lg shadow-lg bg-gray-200">
@@ -59,19 +59,29 @@ function App() {
         <div className="animeInfo"></div>
         <div clasisName="anime-row">
           {/* <h2 className="text-heading">anime</h2> */}
-          <div className="grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-3 
-          gap-4 p-2 text-black-600 text-center bg-black-500">
+          <div
+            className="grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-3 
+          gap-4 p-2 text-black-600 text-center bg-black-500"
+          >
             <AnimeList animelist={animeData} />
           </div>
         </div>
       </div>
       <footer class="bg-white-200 text-center text-black-400 lg:text-center">
-        <div className='my-4'>
-        <h3 className='footer-content font-bold'>Made with <i className="fas fa-heart text-red-600" aria-hidden="true"></i> <a class="link" href="https://github.com/pavandeveloperr" className='hover:underline hover:text-gray-600'>
-             Pavan Kulkarni </a></h3> 
-          </div>      
+        <div className="my-4">
+          <h3 className="footer-content font-bold">
+            Made with{" "}
+            <i className="fas fa-heart text-red-600" aria-hidden="true"></i>{" "}
+            <a
+              class="link"
+              href="https://github.com/pavandeveloperr"
+              className="hover:underline hover:text-gray-600"
+            >
+              Pavan Kulkarni{" "}
+            </a>
+          </h3>
+        </div>
       </footer>
-
     </>
   );
 }
