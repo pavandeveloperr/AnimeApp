@@ -65,11 +65,10 @@ function App() {
           </div>
         </div>
       </div>
-
-      <footer class="bg-gray-200 text-center text-black-400">
-        <div className='mt-4 p-3'>
-        <h3 className='footer-content font-bold'>Made with <i className="fas fa-heart text-red-600" aria-hidden="true"></i> <a class="link" href="https://github.com/pavandeveloperr">
-             <span className='no-underline hover:underline'>Pavan Kulkarni</span> </a></h3> 
+      <footer class="bg-white-200 text-center text-black-400 lg:text-center">
+        <div className='my-4'>
+        <h3 className='footer-content font-bold'>Made with <i className="fas fa-heart text-red-600" aria-hidden="true"></i> <a class="link" href="https://github.com/pavandeveloperr" className='hover:underline hover:text-gray-600'>
+             Pavan Kulkarni </a></h3> 
           </div>      
       </footer>
 
