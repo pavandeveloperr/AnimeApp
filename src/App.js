@@ -45,7 +45,7 @@ function App() {
                     // value={searchQueryText}
                     onChange={(e) => setSearch(e.target.value)}
                     className="shadow-sm focus-outlet-none focus:border-orange-600 focus:ring-black-500 focus:ring-2 invalid:bg-gray-200
-                     sm:text-sm block w-full pl-8 pr-2 py-1.5 sm:text-sm mr-1 font-body border-gray-300 rounded-sm outline-none sm:items-center"
+                     sm:text-sm block w-full pl-8 pr-2 py-1.5 mr-1 font-body border-gray-300 rounded-sm outline-none sm:items-center"
                     placeholder="search your anime.."
                   />
                 </div>
