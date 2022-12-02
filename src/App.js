@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './index.css'
-import './Components/style.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faMagnifyingGlass
@@ -24,15 +23,15 @@ function App() {
 
   return (
     <>
-      <nav className="dark:bg-slate-800 navbar bg-gray-100 w-full top-0 left-0 z-[5] sm:py-0">
+      <nav className="navbar bg-gradient-to-tl from-white/10 to-[#39393f] bg-white w-full top-0 left-0 z-[5] sm:py-0">
         <div className="nav-wrapper w-full mx-auto flex flex-row items-center justify-between max-w-[1280px]">
           <div className="max-w-8xl px-4 py-1 sm:px-6 lg:px-8 w-full mx-auto">
             <div className="relative flex items-center justify-between h-16">
-              <h3 className="md:block font-body text-3xl logo-text">
-                My<strong>Anime</strong>List
+              <h3 className="md:block font-body text-3xl logo-text text-yellow-50">
+                My<strong className='text-red-400'>Anime</strong>List
               </h3>
-              <form className="sm: pl-2.5">
-                <div className="relative rounded-sm shadow-sm bg-gray-200">
+              <form className="sm:pl-2">
+                <div className="relative rounded-lg shadow-lg bg-gray-200">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <span className="text-gray-400 sm:text-sm">
                       <FontAwesomeIcon icon={faMagnifyingGlass} />
@@ -47,7 +46,7 @@ function App() {
                     onChange={(e) => setSearch(e.target.value)}
                     className="shadow-sm focus-outlet-none focus:border-orange-600 focus:ring-black-500 focus:ring-2 invalid:bg-gray-200
                      sm:text-sm block w-full pl-8 pr-2 py-1.5 sm:text-sm mr-1 font-body border-gray-300 rounded-sm outline-none sm:items-center"
-                    placeholder="Search your Anime.."
+                    placeholder="search your anime.."
                   />
                 </div>
               </form>
@@ -56,21 +55,24 @@ function App() {
         </div>
       </nav>
 
-      <div className="contaier">
+      <div className="contaier bg-gray-100 pl-4 pr-0">
         <div className="animeInfo"></div>
         <div clasisName="anime-row">
           {/* <h2 className="text-heading">anime</h2> */}
-          <div className="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-4 sm:grid-cols-3 gap-4 p-4 text-red-500 text-center bg-gray-100">
+          <div className="grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-3 
+          gap-4 p-2 text-black-600 text-center bg-black-500">
             <AnimeList animelist={animeData} />
           </div>
         </div>
       </div>
-      <footer class="bg-white-200 text-center text-black-400 lg:text-left">
-        <div className='my-4'>
-        <h3 className='footer-content'>Made with <i className="fas fa-heart" aria-hidden="true"></i> <a class="link" href="https://github.com/pavandeveloperr">
-             Pavan Kulkarni </a></h3> 
+
+      <footer class="bg-gray-200 text-center text-black-400">
+        <div className='mt-4 p-3'>
+        <h3 className='footer-content font-bold'>Made with <i className="fas fa-heart text-red-600" aria-hidden="true"></i> <a class="link" href="https://github.com/pavandeveloperr">
+             <span className='no-underline hover:underline'>Pavan Kulkarni</span> </a></h3> 
           </div>      
       </footer>
+
     </>
   );
 }
